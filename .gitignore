@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+website/node_modules/
+website/.docusaurus/
+website/build/
+website/static/api/

@@ -1,0 +1,16 @@
+{
+  "name": "goit-pycore-hw-05-docs",
+  "private": true,
+  "pnpm": {
+    "overrides": {
+      "webpack": "5.105.0"
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "docs:api": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 uv run sphinx-build -b html sphinx website/static/api",
+    "docs:start": "pnpm run docs:api && pnpm --dir website start",
+    "docs:build": "pnpm run docs:api && pnpm --dir website build",
+    "docs:serve": "pnpm --dir website serve"
+  }
+}

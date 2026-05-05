@@ -1,0 +1,13 @@
+[project]
+name = "goit-pycore-hw-05"
+version = "0.1.0"
+description = "Homework repository for GoIT Python Core assignments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = []
+docs = [
+    "sphinx>=8.2.3",
+]

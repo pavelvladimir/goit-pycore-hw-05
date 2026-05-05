@@ -1,0 +1,40 @@
+:root {
+  --ifm-color-primary: #9c5b16;
+  --ifm-color-primary-dark: #8f5314;
+  --ifm-color-primary-darker: #874e13;
+  --ifm-color-primary-darkest: #70400f;
+  --ifm-color-primary-light: #a96318;
+  --ifm-color-primary-lighter: #b16819;
+  --ifm-color-primary-lightest: #c7771c;
+  --ifm-background-color: #fffdf9;
+  --ifm-background-surface-color: #fffaf2;
+  --ifm-font-color-base: #2f2720;
+  --ifm-heading-color: #1e1a16;
+  --ifm-navbar-background-color: rgba(255, 251, 244, 0.88);
+  --ifm-code-background: rgba(213, 176, 128, 0.14);
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Avenir Next", "Segoe UI", sans-serif;
+  --ifm-heading-font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #d9a45f;
+  --ifm-color-primary-dark: #cd9650;
+  --ifm-color-primary-darker: #c58e49;
+  --ifm-color-primary-darkest: #a77535;
+  --ifm-color-primary-light: #e0b274;
+  --ifm-color-primary-lighter: #e4b980;
+  --ifm-color-primary-lightest: #edc99f;
+  --ifm-background-color: #14110e;
+  --ifm-background-surface-color: #1d1814;
+  --ifm-font-color-base: #e6dacb;
+  --ifm-heading-color: #fff1df;
+  --ifm-navbar-background-color: rgba(20, 17, 14, 0.86);
+  --ifm-code-background: rgba(217, 164, 95, 0.12);
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid rgba(156, 91, 22, 0.08);
+}
