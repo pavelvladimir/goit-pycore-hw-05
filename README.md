@@ -14,17 +14,21 @@ goit-pycore-hw-05/
 ├── README.md
 ├── .gitignore
 ├── uv.lock
+├── data/
+│   └── sample.log
 ├── goit_pycore_hw_05/
 │   ├── __init__.py
 │   ├── task_01.py
-│   └── task_02.py
+│   ├── task_02.py
+│   └── task_03.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
 │   └── api.rst
 ├── tests/
 │   ├── test_task_01.py
-│   └── test_task_02.py
+│   ├── test_task_02.py
+│   └── test_task_03.py
 └── website/
     ├── docs/
     ├── src/
@@ -55,6 +59,18 @@ It:
 - converts found values to `float`
 - sums all yielded values into the total profit
 
+## Task 3
+
+The module [goit_pycore_hw_05/task_03.py](goit_pycore_hw_05/task_03.py) contains the log analysis functions and a standalone CLI entrypoint.
+
+It:
+
+- parses log lines into date, time, level, and message fields
+- loads logs from a file and counts entries by level
+- filters logs by a selected logging level
+- formats the results as a readable table
+- can be run directly with a log file path and an optional level filter
+
 ## Run
 
 Run the CLI with:
@@ -77,6 +93,20 @@ Example flow for Task 2:
 ```text
 2
 Загальний дохід працівника складається з декількох частин: 1000.01 як основний дохід, доповнений додатковими надходженнями 27.45 і 324.00 доларів.
+```
+
+Example flow for Task 3:
+
+```text
+3
+data/sample.log
+error
+```
+
+Standalone command-line usage for Task 3:
+
+```bash
+uv run python -m goit_pycore_hw_05.task_03 data/sample.log error
 ```
 
 ## Tests

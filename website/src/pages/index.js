@@ -24,6 +24,11 @@ const cards = [
     text: "Generator-based profit extraction from text with regex-powered number parsing.",
     href: "/docs/tasks/task-02",
   },
+  {
+    title: "Task 3",
+    text: "Log file analysis with counts by level and optional filtered log details.",
+    href: "/docs/tasks/task-03",
+  },
 ];
 
 function Card({ title, text, href }) {

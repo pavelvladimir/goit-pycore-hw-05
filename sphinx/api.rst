@@ -24,3 +24,11 @@ Task 02
    :members:
    :undoc-members:
    :show-inheritance:
+
+Task 03
+-------
+
+.. automodule:: goit_pycore_hw_05.task_03
+   :members:
+   :undoc-members:
+   :show-inheritance:
