@@ -4,7 +4,7 @@ const sidebars = {
     {
       type: "category",
       label: "Tasks",
-      items: ["tasks/task-01"],
+      items: ["tasks/task-01", "tasks/task-02"],
     },
   ],
 };

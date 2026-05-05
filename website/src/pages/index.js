@@ -19,6 +19,11 @@ const cards = [
     text: "Closure-based Fibonacci caching with recursive calculation and result reuse.",
     href: "/docs/tasks/task-01",
   },
+  {
+    title: "Task 2",
+    text: "Generator-based profit extraction from text with regex-powered number parsing.",
+    href: "/docs/tasks/task-02",
+  },
 ];
 
 function Card({ title, text, href }) {
@@ -42,7 +47,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>Python homework documentation</p>
-            <h1>One docs site for closure notes, usage guides, and API reference.</h1>
+            <h1>One docs site for Python homework notes, usage guides, and API reference.</h1>
             <p className={styles.lead}>
               This project combines Docusaurus for the main docs experience,
               Sphinx for API pages generated from Python docstrings, and a

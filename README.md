@@ -16,13 +16,15 @@ goit-pycore-hw-05/
 ├── uv.lock
 ├── goit_pycore_hw_05/
 │   ├── __init__.py
-│   └── task_01.py
+│   ├── task_01.py
+│   └── task_02.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
 │   └── api.rst
 ├── tests/
-│   └── test_task_01.py
+│   ├── test_task_01.py
+│   └── test_task_02.py
 └── website/
     ├── docs/
     ├── src/
@@ -42,6 +44,17 @@ It:
 - calculates Fibonacci numbers recursively
 - reuses previously computed values from the cache
 
+## Task 2
+
+The module [goit_pycore_hw_05/task_02.py](goit_pycore_hw_05/task_02.py) contains the `generator_numbers(text)` and `sum_profit(text, func)` functions.
+
+It:
+
+- extracts numbers from text with a generator
+- uses regular expressions to find whitespace-delimited numeric values
+- converts found values to `float`
+- sums all yielded values into the total profit
+
 ## Run
 
 Run the CLI with:
@@ -50,12 +63,20 @@ Run the CLI with:
 uv run python main.py
 ```
 
-The CLI asks for `n`, creates a cached Fibonacci function, and prints the result.
+The CLI lets you choose a task and prints the computed result.
 
 Example flow for Task 1:
 
 ```text
+1
 10
+```
+
+Example flow for Task 2:
+
+```text
+2
+Загальний дохід працівника складається з декількох частин: 1000.01 як основний дохід, доповнений додатковими надходженнями 27.45 і 324.00 доларів.
 ```
 
 ## Tests
