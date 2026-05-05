@@ -20,7 +20,8 @@ goit-pycore-hw-05/
 │   ├── __init__.py
 │   ├── task_01.py
 │   ├── task_02.py
-│   └── task_03.py
+│   ├── task_03.py
+│   └── task_04.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
@@ -28,7 +29,8 @@ goit-pycore-hw-05/
 ├── tests/
 │   ├── test_task_01.py
 │   ├── test_task_02.py
-│   └── test_task_03.py
+│   ├── test_task_03.py
+│   └── test_task_04.py
 └── website/
     ├── docs/
     ├── src/
@@ -71,6 +73,18 @@ It:
 - formats the results as a readable table
 - can be run directly with a log file path and an optional level filter
 
+## Task 4
+
+The module [goit_pycore_hw_05/task_04.py](goit_pycore_hw_05/task_04.py) contains the console assistant bot with decorator-based input error handling.
+
+It:
+
+- parses user commands with `parse_input()`
+- stores contacts in a dictionary
+- wraps all command handlers with the `input_error` decorator
+- handles `KeyError`, `ValueError`, and `IndexError` without stopping the program
+- supports `hello`, `add`, `change`, `phone`, `all`, `close`, and `exit`
+
 ## Run
 
 Run the CLI with:
@@ -107,6 +121,24 @@ Standalone command-line usage for Task 3:
 
 ```bash
 uv run python -m goit_pycore_hw_05.task_03 data/sample.log error
+```
+
+Example flow for Task 4:
+
+```text
+4
+add
+add Bob
+add Bob 0501234567
+phone
+all
+exit
+```
+
+Standalone command-line usage for Task 4:
+
+```bash
+uv run python -m goit_pycore_hw_05.task_04
 ```
 
 ## Tests

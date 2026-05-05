@@ -1,5 +1,6 @@
 from goit_pycore_hw_05 import caching_fibonacci, generator_numbers, sum_profit
 from goit_pycore_hw_05.task_03 import build_log_report
+from goit_pycore_hw_05.task_04 import main as run_assistant_bot
 
 
 def run_task_01():
@@ -35,11 +36,16 @@ def run_task_03():
     print(report)
 
 
+def run_task_04():
+    run_assistant_bot()
+
+
 def main():
     print("Choose a task:")
     print("1 - Caching Fibonacci")
     print("2 - Sum profit from text")
     print("3 - Log file analysis")
+    print("4 - Assistant bot with decorators")
     choice = input("Enter task number: ").strip()
 
     if choice == "1":
@@ -51,8 +57,11 @@ def main():
     if choice == "3":
         run_task_03()
         return
+    if choice == "4":
+        run_task_04()
+        return
 
-    print("Invalid choice. Please enter 1, 2, or 3.")
+    print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
 if __name__ == "__main__":

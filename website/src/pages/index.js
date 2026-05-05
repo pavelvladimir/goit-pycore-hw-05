@@ -29,6 +29,11 @@ const cards = [
     text: "Log file analysis with counts by level and optional filtered log details.",
     href: "/docs/tasks/task-03",
   },
+  {
+    title: "Task 4",
+    text: "Assistant bot with decorator-based error handling for contact commands.",
+    href: "/docs/tasks/task-04",
+  },
 ];
 
 function Card({ title, text, href }) {
